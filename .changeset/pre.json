@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "pmmp-sdk": "0.0.0"
+  },
+  "changesets": [
+    "angry-dolphins-grow"
+  ]
+}

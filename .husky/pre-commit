@@ -3,6 +3,6 @@
 
 bun run build
 
-bun run typecheck
+bun run tsc
 
 bun run lint
