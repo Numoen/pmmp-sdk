@@ -1,0 +1,34 @@
+{
+  "name": "pmmp-sdk",
+  "type": "module",
+  "sideEffects": false,
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --format esm --sourcemap=external",
+    "format": "biome format . --write",
+    "lint": "biome check .",
+    "lint:fix": "pnpm lint --apply"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.3.1",
+    "@changesets/cli": "^2.26.2",
+    "@viem/anvil": "^0.0.6",
+    "bun-types": "latest",
+    "husky": "^8.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "viem": "^1.0.0"
+  },
+  "dependencies": {
+    "reverse-mirage": "^1.0.3"
+  }
+}

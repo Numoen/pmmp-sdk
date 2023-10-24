@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    // Build config
+    "lib": ["ESNext"],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "composite": true,
+    // Type checking
+    "strict": true,
+    "useDefineForClassFields": true, // Not enabled by default in `strict` mode unless we bump `target` to ES2022.
+    "noFallthroughCasesInSwitch": true, // Not enabled by default in `strict` mode.
+    "noImplicitReturns": true, // Not enabled by default in `strict` mode.
+    "useUnknownInCatchVariables": true, // TODO: This would normally be enabled in `strict` mode but would require some adjustments to the codebase.
+    "noImplicitOverride": true, // Not enabled by default in `strict` mode.
+    "noUnusedLocals": true, // Not enabled by default in `strict` mode.
+    "noUnusedParameters": true, // Not enabled by default in `strict` mode.
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "types": [
+      "bun-types" // add Bun global
+    ]
+  }
+}
