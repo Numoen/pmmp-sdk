@@ -5,6 +5,7 @@
     "pmmp-sdk": "0.0.0"
   },
   "changesets": [
-    "angry-dolphins-grow"
+    "angry-dolphins-grow",
+    "brown-crews-clean"
   ]
 }
